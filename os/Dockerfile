@@ -17,7 +17,7 @@ export PATH=$PATH:/usr/local/go/bin
 
 ADD ./apps /apps
 
-EXPOSE 9000
+EXPOSE 8080
 
 
 

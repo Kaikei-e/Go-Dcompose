@@ -3,7 +3,8 @@ version: "3"
 services:
   os:
     build: ./os
+    tty: true
     volumes:
       - ./os/apps:/apps
     ports:
-      - "9000:9000"
+      - "8080:8080"
