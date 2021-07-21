@@ -2,7 +2,7 @@ FROM ubuntu:20.10
 
 RUN apt update -y && \
 apt upgrade -y && \
-apt install build-essential
+apt install build-essential -y
 
 RUN apt update -y && \
 apt install -y curl wget git && \
