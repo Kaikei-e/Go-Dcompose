@@ -6,7 +6,7 @@ apt install build-essential -y
 
 RUN apt update -y && \
 apt install -y curl wget git && \
-curl -o nodejs.deb https://deb.nodesource.com/node_14.x/pool/main/n/nodejs/nodejs_14.17.6-deb-1nodesource1_amd64.deb && \
+curl -o nodejs.deb https://deb.nodesource.com/node_16.x/pool/main/n/nodejs/nodejs_16.13.0-deb-1nodesource1_amd64.deb && \
 apt install -y ./nodejs.deb && \
 rm nodejs.deb && \
 rm -rf /var/lib/apt/lists/
