@@ -11,8 +11,8 @@ apt install -y ./nodejs.deb && \
 rm nodejs.deb && \
 rm -rf /var/lib/apt/lists/
 
-RUN wget https://dl.google.com/go/go1.17.5.linux-amd64.tar.gz && \
-tar -C /usr/local -xzf go1.17.5.linux-amd64.tar.gz
+RUN wget https://dl.google.com/go/go1.17.6.linux-amd64.tar.gz && \
+tar -C /usr/local -xzf go1.17.6.linux-amd64.tar.gz
 
 ENV PATH $PATH:/usr/local/go/bin
 
