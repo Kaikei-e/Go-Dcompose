@@ -1,4 +1,4 @@
-FROM amd64/ubuntu:21.10
+FROM --platform=arm64 ubuntu:21.10
 
 RUN apt update -y && \
 apt upgrade -y && \
@@ -17,7 +17,7 @@ ENV PATH $PATH:/usr/local/go/bin
 
 ADD ./apps /apps
 
-EXPOSE 9090
+EXPOSE 9090 3000
 
 
 

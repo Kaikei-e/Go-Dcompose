@@ -4,9 +4,11 @@ services:
   os:
     build: ./os
     tty: true
+    platform: linux/arm64
     volumes:
       - ./os/apps:/apps
     environment:
       TZ: Asia/Tokyo
     ports:
-      - "8080:8080"
+      - "9090:9090"
+      - "3000:3000"
