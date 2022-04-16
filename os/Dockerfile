@@ -6,12 +6,12 @@ apt install build-essential -y
 
 RUN apt update -y && \
 apt install -y curl wget git && \
-wget https://nodejs.org/dist/v16.13.2/node-v16.13.2.tar.gz && \
-tar -xzf node-v16.13.2.tar.gz -C /usr/local && \
+wget https://nodejs.org/dist/v16.13.2/node-v16.14.2.tar.gz && \
+tar -xzf node-v16.14.2.tar.gz -C /usr/local && \
 rm -rf /var/lib/apt/lists/
 
-RUN wget https://dl.google.com/go/go1.17.6.linux-amd64.tar.gz && \
-tar -xzf go1.17.6.linux-amd64.tar.gz -C /usr/local
+RUN wget https://dl.google.com/go/go1.18.61.linux-amd64.tar.gz && \
+tar -xzf go1.18.1.linux-amd64.tar.gz -C /usr/local
 
 ENV PATH $PATH:/usr/local/go/bin
 
