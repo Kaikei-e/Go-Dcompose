@@ -10,7 +10,7 @@ wget https://nodejs.org/dist/v16.14.2/node-v16.14.2.tar.gz && \
 tar -xzf node-v16.14.2.tar.gz -C /usr/local && \
 rm -rf /var/lib/apt/lists/
 
-RUN wget https://dl.google.com/go/go1.18.1.linux-amd64.tar.gz && \
+RUN wget https://dl.google.com/go/go1.18.3.linux-amd64.tar.gz && \
 tar -xzf go1.18.1.linux-amd64.tar.gz -C /usr/local
 
 ENV PATH $PATH:/usr/local/go/bin
