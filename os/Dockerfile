@@ -17,7 +17,7 @@ ENV PATH $PATH:/usr/local/go/bin
 
 ADD ./apps /apps
 
-EXPOSE 9090 3000
+EXPOSE 9090 3000 5432
 
 
 
